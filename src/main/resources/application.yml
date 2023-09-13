@@ -44,7 +44,7 @@ datasource:
     naming:
       strategy: org.hibernate.dialect.MySQL5Dialect
 
-paasta:
+ap:
   portal:
     api:
       authorization:
@@ -58,7 +58,7 @@ paasta:
 
 logging:
   level:
-    org.openpaas.paasta.portal.web.admin.exception.GlobalControllerExceptionHandler: DEBUG
+    org.openpaas.portal.web.admin.exception.GlobalControllerExceptionHandler: DEBUG
 
 languageList: <PORTAL_USE_LANG>
 #Spring config setting (current version not used)
@@ -80,9 +80,9 @@ languageList: <PORTAL_USE_LANG>
 
 #Infra Admin Settings (current version not used)
 #project:
-#  name: paasta-web-admin
-#  artifactId: paasta-web-admin
-#  description: paasta-web-admin
+#  name: ap-web-admin
+#  artifactId: ap-web-admin
+#  description: ap-web-admin
 #info:
 #  app:
 #    encoding: Encoding - UTF-8

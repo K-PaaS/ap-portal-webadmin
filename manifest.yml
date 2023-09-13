@@ -4,7 +4,7 @@ applications:
     instances: 1
     buildpacks:
     - java_buildpack
-    path: build/libs/paas-ta-portal-webadmin.war
+    path: build/libs/ap-portal-webadmin.war
     env:
       server_port: 8080
 
@@ -19,12 +19,12 @@ applications:
       datasource_cfg_ddl-auto: none
       datasource_cfg_naming_strategy: org.hibernate.dialect.MySQL5Dialect
 
-      paasta_portal_api_authorization_base64: Basic YWRtaW46b3BlbnBhYXN0YQ==
-      paasta_portal_api_zuulUrl_cfapi: http://portal-gateway.<APP_DOMAIN>/portalapi
-      paasta_portal_api_zuulUrl_commonapi: http://portal-gateway.<APP_DOMAIN>/commonapi
-      paasta_portal_api_zuulUrl_storageapi: http://portal-gateway.<APP_DOMAIN>/storageapi
-      paasta_portal_storageapi_type: swift
+      ap_portal_api_authorization_base64: Basic YWRtaW46b3BlbnBhYXN0YQ==
+      ap_portal_api_zuulUrl_cfapi: http://portal-gateway.<APP_DOMAIN>/portalapi
+      ap_portal_api_zuulUrl_commonapi: http://portal-gateway.<APP_DOMAIN>/commonapi
+      ap_portal_api_zuulUrl_storageapi: http://portal-gateway.<APP_DOMAIN>/storageapi
+      ap_portal_storageapi_type: swift
 
-      logging_level_org.openpaas.paasta.portal.web.admin.exception.GlobalControllerExceptionHandler: DEBUG
+      logging_level_org.openpaas.portal.web.admin.exception.GlobalControllerExceptionHandler: DEBUG
 
       languageList: <PORTAL_USE_LANG>
