@@ -358,7 +358,7 @@
                                             <label for="startertagParamInput" class="col-sm-3 col-xs-12 control-label" th:text="#{catalogMain.starter.modal.body.tag.label}"></label>
                                             <div class="col-sm-4 col-xs-3">
                                                 <select class="form-control" name="startertagParamInput" id="startertagParamInput">
-                                                    <option value="paas-ta">paas-ta</option>
+                                                    <option value="k-paas">k-paas</option>
                                                     <option value="community">community</option>
                                                 </select>
                                             </div>
@@ -373,7 +373,7 @@
                                                 </select>
                                             </div>
                                             <div class="col-sm-1 col-xs-3">
-                                                <button class="user_btn colors1" name="startertagPreview" id="startertagPreviewClassification" style="position: absolute;top: 6px;left: -8px;" disabled="disabled">paas-ta</button>
+                                                <button class="user_btn colors1" name="startertagPreview" id="startertagPreviewClassification" style="position: absolute;top: 6px;left: -8px;" disabled="disabled">k-paas</button>
                                             </div>
                                         </div>
 
@@ -580,7 +580,7 @@
                                             <label for="devEnvtagParamInput" class="col-sm-3 col-xs-12 control-label" th:text="#{catalogMain.dev.modal.body.tag.label}"></label>
                                             <div class="col-sm-4 col-xs-3">
                                                 <select class="form-control" id="devEnvtagParamInput" name="devEnvtagParamInput">
-                                                    <option value="paas-ta">paas-ta</option>
+                                                    <option value="k-paas">k-paas</option>
                                                     <option value="community">community</option>
                                                 </select>
                                             </div>
@@ -595,7 +595,7 @@
                                                 </select>
                                             </div>
                                             <div class="col-sm-1 col-xs-3">
-                                                <button class="user_btn colors1" name="devEnvtagPreview" id ="devEnvtagPreviewClassification" style="position: absolute;top: 6px;left: -8px;" disabled="disabled">paas-ta</button>
+                                                <button class="user_btn colors1" name="devEnvtagPreview" id ="devEnvtagPreviewClassification" style="position: absolute;top: 6px;left: -8px;" disabled="disabled">k-paas</button>
                                             </div>
                                         </div>
 
@@ -891,7 +891,7 @@
                                             <label for="tagParamInput" class="col-sm-3 col-xs-12 control-label" th:text="#{catalogMain.service.modal.body.tag.label}"></label>
                                             <div class="col-sm-4 col-xs-3">
                                                 <select class="form-control" id="tagParamInput" name="tagParamInput">
-                                                    <option value="paas-ta" >paas-ta</option>
+                                                    <option value="k-paas" >k-paas</option>
                                                     <option value="community">community</option>
                                                 </select>
                                             </div>
@@ -907,7 +907,7 @@
                                                 </select>
                                             </div>
                                             <div class="col-sm-1 col-xs-3">
-                                                <button class="user_btn colors1 " name="tagPreview" id="tag1param" style="position: absolute;top: 6px;left: -8px;" disabled="disabled">paas-ta</button>
+                                                <button class="user_btn colors1 " name="tagPreview" id="tag1param" style="position: absolute;top: 6px;left: -8px;" disabled="disabled">k-paas</button>
                                             </div>
                                         </div>
 
@@ -1024,17 +1024,17 @@
      앱 템플릿에서 사용중인지 확인 부분
     */
 
-    var STARTER_PACK_PROC_URL = /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).STARTER_PACK_PROC_URL}]]*/ "";
-    var DEVELOP_PACK_PROC_URL = /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).DEVELOP_PACK_PROC_URL}]]*/ "";
-    var SERVICE_PACK_PROC_URL = /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).SERVICE_PACK_PROC_URL}]]*/ "";
+    var STARTER_PACK_PROC_URL = /*[[${T(org.openpaas.portal.web.admin.common.Constants).STARTER_PACK_PROC_URL}]]*/ "";
+    var DEVELOP_PACK_PROC_URL = /*[[${T(org.openpaas.portal.web.admin.common.Constants).DEVELOP_PACK_PROC_URL}]]*/ "";
+    var SERVICE_PACK_PROC_URL = /*[[${T(org.openpaas.portal.web.admin.common.Constants).SERVICE_PACK_PROC_URL}]]*/ "";
 
-    var STARTER_CATALOG_ID = /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).STARTER_CATALOG_ID}]]*/ "";
-    var BUILD_PACK_CATALOG_ID = /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).BUILD_PACK_CATALOG_ID}]]*/ "";
-    var SERVICE_PACK_CATALOG_ID = /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).SERVICE_PACK_CATALOG_ID}]]*/ "";
+    var STARTER_CATALOG_ID = /*[[${T(org.openpaas.portal.web.admin.common.Constants).STARTER_CATALOG_ID}]]*/ "";
+    var BUILD_PACK_CATALOG_ID = /*[[${T(org.openpaas.portal.web.admin.common.Constants).BUILD_PACK_CATALOG_ID}]]*/ "";
+    var SERVICE_PACK_CATALOG_ID = /*[[${T(org.openpaas.portal.web.admin.common.Constants).SERVICE_PACK_CATALOG_ID}]]*/ "";
 
-    var STARTER_CLASSIFICATION_CODE_ID = /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).STARTER_CLASSIFICATION_CODE_ID}]]*/ "";
-    var BUILD_PACK_CLASSIFICATION_CODE_ID = /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).BUILD_PACK_CLASSIFICATION_CODE_ID}]]*/ "";
-    var SERVICE_PACK_CLASSIFICATION_CODE_ID = /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).SERVICE_PACK_CLASSIFICATION_CODE_ID}]]*/ "";
+    var STARTER_CLASSIFICATION_CODE_ID = /*[[${T(org.openpaas.portal.web.admin.common.Constants).STARTER_CLASSIFICATION_CODE_ID}]]*/ "";
+    var BUILD_PACK_CLASSIFICATION_CODE_ID = /*[[${T(org.openpaas.portal.web.admin.common.Constants).BUILD_PACK_CLASSIFICATION_CODE_ID}]]*/ "";
+    var SERVICE_PACK_CLASSIFICATION_CODE_ID = /*[[${T(org.openpaas.portal.web.admin.common.Constants).SERVICE_PACK_CLASSIFICATION_CODE_ID}]]*/ "";
 
     var CATEGORY_LIST_PROC_URL = "/v2/codedetail";
     var CATEGORY_GROUP_LIST_PROC_URL = "/v2/codegroup";
@@ -3037,11 +3037,11 @@
             defaultAppClassificationCodeList(STARTER_CLASSIFICATION_CODE_ID);
 
             //초기화
-            $('select[id=startertagParamInput]').val("paas-ta");
+            $('select[id=startertagParamInput]').val("k-paas");
             $('select[id=startertagParamInputPaidFree]').val("pay");
             $('select[id=startertag1]').val("colors1");
             $('select[id=startertag2]').val("colors1");
-            $('#startertagPreviewClassification').removeAttr('class').attr('class', 'user_btn colors1').text('paas-ta');
+            $('#startertagPreviewClassification').removeAttr('class').attr('class', 'user_btn colors1').text('k-paas');
             $('#startertagPreviewPaidFree').removeAttr('class').attr('class', 'user_btn colors1').text('pay');
 
             // [서비스] 항목
@@ -3070,11 +3070,11 @@
             defaultAppClassificationCodeList(BUILD_PACK_CLASSIFICATION_CODE_ID);
 
             //초기화
-            $('select[id=devEnvtagParamInput]').val("paas-ta");
+            $('select[id=devEnvtagParamInput]').val("k-paas");
             $('select[id=devEnvtagParamInputPaidFree]').val("pay");
             $('select[id=devEnvtag1]').val("colors1");
             $('select[id=devEnvtag2]').val("colors1");
-            $('#devEnvtagPreviewClassification').removeAttr('class').attr('class', 'user_btn colors1').text('paas-ta');
+            $('#devEnvtagPreviewClassification').removeAttr('class').attr('class', 'user_btn colors1').text('k-paas');
             $('#devEnvtagPreviewPaidFree').removeAttr('class').attr('class', 'user_btn colors1').text('pay');
             $('input:radio[name=devEnvUseYn]:input[value="Y"]').prop('checked', true);
             $('#devEnvAppRemove').trigger('click');
@@ -3109,11 +3109,11 @@
             // 초기화
             $('input[name=serviceParamInput]').val("");
             $('input[name=appBindParamInput]').val("");
-            $('select[id=tagParamInput]').val("paas-ta");
+            $('select[id=tagParamInput]').val("k-paas");
             $('select[id=tagParamInputPaidFree]').val("pay");
             $('select[id=tag1]').val("colors1");
             $('select[id=tag2]').val("colors1");
-            $('#tag1param').removeAttr('class').attr('class', 'user_btn colors1').text('paas-ta');
+            $('#tag1param').removeAttr('class').attr('class', 'user_btn colors1').text('k-paas');
             $('#tagPreviewPaidFree').removeAttr('class').attr('class', 'user_btn colors1').text('pay');
 
 
@@ -3138,7 +3138,7 @@
     // SET FILE INFO
     var procSetFileInfo = function(reqFile) {
         var fileName = reqFile[0].name;
-        var limitFileSizeMb = /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).CATALOG_APP_SAMPLE_LIMIT_FILE_SIZE_MB}]]*/ "";
+        var limitFileSizeMb = /*[[${T(org.openpaas.portal.web.admin.common.Constants).CATALOG_APP_SAMPLE_LIMIT_FILE_SIZE_MB}]]*/ "";
         var limitFileSize = parseInt(limitFileSizeMb) << 20;
         var orgFileSize = reqFile[0].size;
         if (limitFileSize < orgFileSize) {
@@ -3429,7 +3429,7 @@
             +"   <div name='paramArea'>"
             +"       <div class='col-sm-4 col-xs-3'>"
             +"           <select class='form-control' name='startertagParamInput' id='startertagPreviewClassification'>"
-            +"               <option value='paas-ta'>paas-ta</option>"
+            +"               <option value='k-paas'>k-paas</option>"
             +"               <option value='community'>community</option>"
             +"           </select>"
             +"       </div>"
@@ -3480,7 +3480,7 @@
             +"   <div name='paramArea'>"
             +"       <div class='col-sm-4 col-xs-3'>"
             +"           <select class='form-control' name='devEnvtagParamInput' id='devEnvtagPreviewClassification'>"
-            +"               <option value='paas-ta'>paas-ta</option>"
+            +"               <option value='k-paas'>k-paas</option>"
             +"               <option value='community'>community</option>"
             +"           </select>"
             +"       </div>"
@@ -3570,7 +3570,7 @@
             +"   <div name='paramArea'>"
             +"       <div class='col-sm-4 col-xs-3'>"
             +"           <select class='form-control' name='tagParamInput' id='tag1param'/>"
-            +"               <option value='paas-ta'>paas-ta</option>"
+            +"               <option value='k-paas'>k-paas</option>"
             +"               <option value='community'>community</option>"
             +"       </div>"
             +"       <div class='col-sm-2 col-xs-3'>"

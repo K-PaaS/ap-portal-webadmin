@@ -30,7 +30,7 @@ apply plugin: 'io.spring.dependency-management'
 apply plugin: 'war'
 
 war {
-    baseName = 'paas-ta-portal-webadmin'
+    baseName = 'ap-portal-webadmin'
 }
 
 sourceCompatibility = 1.8

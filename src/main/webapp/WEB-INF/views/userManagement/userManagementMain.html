@@ -163,7 +163,7 @@
         var filter = $("#access").val();
         var param = {
             searchKeyword: document.getElementById('searchKeyword').value.toLowerCase(),
-            key: /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).USER_MANAGEMENT_PAGE_SIZE}]]*/ "",
+            key: /*[[${T(org.openpaas.portal.web.admin.common.Constants).USER_MANAGEMENT_PAGE_SIZE}]]*/ "",
             pageNo: reqPageNo
         };
 
@@ -174,14 +174,14 @@
     var procButtonClick = function () {
         key = $("#apiUrls").val();
         BOOLEN_SEARCH = true;
-        getUserInfoList(/*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).USER_MANAGEMENT_PAGE_NO }]]*/ "",key);
+        getUserInfoList(/*[[${T(org.openpaas.portal.web.admin.common.Constants).USER_MANAGEMENT_PAGE_NO }]]*/ "",key);
     }
 
     var procCheckSearchFormKeyEvent = function (e) {
         key = $("#apiUrls").val();
         if (e.keyCode == 13 && e.srcElement.type != 'textarea') {
             BOOLEN_SEARCH = true;
-            getUserInfoList(/*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).USER_MANAGEMENT_PAGE_NO }]]*/ "",key);
+            getUserInfoList(/*[[${T(org.openpaas.portal.web.admin.common.Constants).USER_MANAGEMENT_PAGE_NO }]]*/ "",key);
         }
     };
 
@@ -191,8 +191,8 @@
         var filter = $("#access").val();
         var param = {
             searchKeyword: document.getElementById('searchKeyword').value.toLowerCase(),
-            pageSize: /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).USER_MANAGEMENT_PAGE_SIZE}]]*/ "",
-            pageNo: /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).USER_MANAGEMENT_PAGE_NO }]]*/ ""
+            pageSize: /*[[${T(org.openpaas.portal.web.admin.common.Constants).USER_MANAGEMENT_PAGE_SIZE}]]*/ "",
+            pageNo: /*[[${T(org.openpaas.portal.web.admin.common.Constants).USER_MANAGEMENT_PAGE_NO }]]*/ ""
         };
         procCallAjax(REST_URL+"/"+filter+"/user"+"?key="+key , "GET", param, procCallbackGetUserInfoList, $('#serviceModalLoadingBar'));
     }
@@ -211,7 +211,7 @@
 
         document.getElementById('currentPageNo').value = reqPageNo;
 
-        if (reqPageNo == /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).USER_MANAGEMENT_PAGE_NO}]]*/ "") {
+        if (reqPageNo == /*[[${T(org.openpaas.portal.web.admin.common.Constants).USER_MANAGEMENT_PAGE_NO}]]*/ "") {
             LOADED_LIST_COUNT = 0;
             objTable.html('');
         }
@@ -234,14 +234,14 @@
             usersObj = new Object();
 
             for (var i = 0; i < listLength; i++) {
-                boldClass = /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).USE_YN_Y}]]*/ "" == resultList[i].adminYn ? 'fwb' : '';
+                boldClass = /*[[${T(org.openpaas.portal.web.admin.common.Constants).USE_YN_Y}]]*/ "" == resultList[i].adminYn ? 'fwb' : '';
                 menuText = /*[[#{usermgnt.table.management.admin.grant}]]*/ '';
                 activeText = /*[[#{usermgnt.table.management.signup.approval}]]*/ '';
                 var telephone = resultList[i].tellPhone == null ? '-' : resultList[i].tellPhone;
-                if (resultList[i].adminYn == /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).USE_YN_Y}]]*/ "") {
+                if (resultList[i].adminYn == /*[[${T(org.openpaas.portal.web.admin.common.Constants).USE_YN_Y}]]*/ "") {
                     menuText = /*[[#{usermgnt.table.management.admin.delete}]]*/ '';
                 }
-                if (resultList[i].active == /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).USE_YN_Y}]]*/ "") {
+                if (resultList[i].active == /*[[${T(org.openpaas.portal.web.admin.common.Constants).USE_YN_Y}]]*/ "") {
                     activeText = /*[[#{usermgnt.table.management.signup.unsubscribe}]]*/ '';
                 }
                 if (resultList[i].active == 'Y') {
@@ -457,7 +457,7 @@
 
         getInitMarketPlaceURL();
         $('#userInfoViewArea').hide();
-        getUserInfoList(/*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).USER_MANAGEMENT_PAGE_NO}]]*/ "",key);
+        getUserInfoList(/*[[${T(org.openpaas.portal.web.admin.common.Constants).USER_MANAGEMENT_PAGE_NO}]]*/ "",key);
     };
 
     function btnAddUser() {
@@ -512,7 +512,7 @@
     $( "#apiUrls" ).change(function() {
         key = $("#apiUrls").val();
         $.cookie("api_key",key);
-        getUserInfoList(/*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).USER_MANAGEMENT_PAGE_NO}]]*/ "",key);
+        getUserInfoList(/*[[${T(org.openpaas.portal.web.admin.common.Constants).USER_MANAGEMENT_PAGE_NO}]]*/ "",key);
     });
 
     /*]]>*/

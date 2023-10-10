@@ -11,17 +11,18 @@
     var UPDATE_MESSAGE = /*[[#{common.info.popup.update.message}]]*/ "";
     var DELETE_MESSAGE = /*[[#{common.info.popup.delete.message}]]*/ "";
 
-    var RESULT_STATUS_SUCCESS = /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).RESULT_STATUS_SUCCESS}]]*/ "SUCCESS";
-    var RESULT_STATUS_FAIL = /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).RESULT_STATUS_FAIL}]]*/ "FAIL";
+    var RESULT_STATUS_SUCCESS = /*[[${T(org.openpaas.portal.web.admin.common.Constants).RESULT_STATUS_SUCCESS}]]*/
+    "SUCCESS";
+    var RESULT_STATUS_FAIL = /*[[${T(org.openpaas.portal.web.admin.common.Constants).RESULT_STATUS_FAIL}]]*/ "FAIL";
 
-    var CUD_C = /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).CUD_C}]]*/ "";
-    var CUD_U = /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).CUD_U}]]*/ "";
+    var CUD_C = /*[[${T(org.openpaas.portal.web.admin.common.Constants).CUD_C}]]*/ "";
+    var CUD_U = /*[[${T(org.openpaas.portal.web.admin.common.Constants).CUD_U}]]*/ "";
 
     var RESULT_STATUS_SUCCESS_MESSAGE = /*[[#{common.info.result.success}]]*/ "";
     var RESULT_STATUS_FAIL_MESSAGE = /*[[#{common.system.error.message}]]*/ "";
     var RESULT_ERROR_MESSAGE = /*[[#{common.info.result.error.message}]]*/ "";
     var INFO_EMPTY_REQUEST_DATA = /*[[#{common.info.empty.req.data}]]*/ "";
-    var IMAGE_PATH_PREFIX = /*[[${T(org.openpaas.paasta.portal.web.admin.common.Constants).IMAGE_PATH_PREFIX}]]*/ "";
+    var IMAGE_PATH_PREFIX = /*[[${T(org.openpaas.portal.web.admin.common.Constants).IMAGE_PATH_PREFIX}]]*/ "";
 
     var API_PROC_URL = "/external/configs";
     var REST_URL = "/portalapi/login";
@@ -31,16 +32,16 @@
     var DELETE_SUCCESS_MSG = /*[[#{delete.result.success}]]*/ "";
 
     //var dataList = getLanguageConfig();
- 
+
     function noticeAnimation() {
-        $("#notice")
+    $("#notice")
     }
 
     function changeLang(lang) {
-        document.cookie = "lang=" + lang;
-        location.reload();
+    document.cookie = "lang=" + lang;
+    location.reload();
     }
-    
+
     $(document).ready(function () {
 
     });
@@ -54,11 +55,10 @@
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini">
     <b>P</b>
-                <!-- 파스타 이미지로 대체 -->
                 <!--<img src="http://portal-web-admin.115.68.46.187.xip.io./resources/images/logo.png" width="50" height="50"> -->
   </span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg"><b>PaaS-TA</b></span>
+            <span class="logo-lg"><b>K-PaaS</b></span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top">
